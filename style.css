@@ -1,0 +1,121 @@
+body, h1, h2, p, a, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.site-header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-header h1 {
+    font-size: 1.8em;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.site-header nav a:hover {
+    color: #ffd700;
+}
+
+.news-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    color: #004d99;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.news-meta {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+.news-excerpt {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-header nav {
+        margin-top: 15px;
+    }
+    .site-header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}
