@@ -30,8 +30,6 @@ Before deploying, make sure to customize the following files:
     * Update the placeholder text and metadata within the `<article class="news-card">` sections with your real news content.
     * Update the contact email in the footer.
 
-* **`style.css`**: Adjust the primary and secondary colors (`#004d99` and `#ffd700`) to match your brand identity.
-
 ### 2. Hosting with GitHub Pages
 
 This project is set up for one-click deployment via GitHub Pages:
@@ -49,6 +47,3 @@ Your site will be live shortly at `https://[Your-Username].github.io/[Repository
 ## 🤝 Contribution
 
 Feel free to fork this project and adapt it for your needs.
-
----
-*Created using HTML, CSS, and JavaScript.*
